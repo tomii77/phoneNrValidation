@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+Route::get('/', ['uses' => 'phoneController@index']);
+Route::post('/', ['uses' => 'phoneController@store']);
